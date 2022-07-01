@@ -1,0 +1,98 @@
+<div class="container mt-5">
+  <h1>todo list</h1>
+
+<div class="row">
+  <div class="col-md-4">
+    <input type="text" class="form-control" [(ngModel)]="todo">
+  </div>
+  <div class="col-md-2">
+    <button class="btn btn-success" (click)="save(todo)">add task</button>
+  </div>
+</div>
+
+
+
+  <table class="mt-5 table border border-success table-hover">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">task</th>
+        <th scope="col">edit</th>
+        <th scope="col">delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data, let i=index">
+        <th scope="row">{{i}}</th>
+        <td>{{item}}</td>
+        <td><button type="button" class="btn btn-primary rounded-pill" (click)="edit(item)">edit</button></td>
+        <td><button type="button" class="btn btn-danger rounded-pill" (click)="deletedata(item)">delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="custom-container mt-5">
+
+  <h1>To Do list App</h1>
+
+  <input type="text" [(ngModel)]="todo">
+  <button (click)="save(todo)">Save</button>
+
+
+  <table class="table border mt-5">
+    <thead>
+      <tr>
+        <th scope="col">No.</th>
+        <th scope="col">Details</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data, let i=index">
+        <th scope="row">{{i}}</th>
+        <ng-container *ngIf="!isEditable">
+          <td>{{item}}</td>
+        </ng-container>
+        <ng-container *ngIf="isEditable" >
+          <td><input type="text" ></td>
+          <td><button (click)="update(item)">update</button></td>
+        </ng-container>
+        <ng-container *ngIf="!isEditable">
+          <td><button (click)="edit(item)">edit</button></td>
+        </ng-container>
+
+        <td><button (click)="deletedata(item)">delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->

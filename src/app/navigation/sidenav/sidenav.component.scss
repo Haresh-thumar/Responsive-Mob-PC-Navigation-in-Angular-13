@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+.sidenav-logo {
+  width: 50px;
+  height: auto;
+  margin: 0 10px 10px 15px;
+}
+
+.sidenav-profile-name {
+  width: 100%;
+  max-width: 700px;
+  font-size: 18px;
+  color: #3f51b5;
+  margin: 8px 0 0 0;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+.version-bagde {
+  margin: 5px 0 20px 0px;
+  padding: 2px 8px 4px 8px;
+  font-size: 10px;
+  background-color: rgb(253, 120, 71)!important;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px !important;
+  font-weight: 400;
+}
+
+a:hover,
+a:active {
+  color: #ffffff;
+  font-weight: 500;
+  background: #3f51b5 !important;
+}
+
+.nav-caption {
+  display: inline-block;
+  padding-left: 10px;
+}

@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <div class="header-container">
+    <div fxHide.gt-sm>
+      <button mat-icon-button (click)="onToggleSidenav()" class="mob-bar-icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div>
+      <p routerLink="/home" class="header-title"><span class="material-icons header-logo-icon">widgets</span>App Management...!</p>
+    </div>
+
+    <div fxFlex fxLayout fxLayoutAlign="end" fxShow.gt-sm="true" fxShow="false">
+      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+        <li>
+          <a routerLink="/"><span class="material-icons desktop-nav-icon">home</span>Home</a>
+        </li>
+        <li>
+          <a routerLink="/ourApp"><span class="material-icons desktop-nav-icon">app_settings_alt</span>Our app</a>
+        </li>
+        <li>
+          <a routerLink="/services"><span class="material-icons desktop-nav-icon">support_agent</span>Our Services</a>
+        </li>
+        <button mat-raised-button class="mt-login-btn" color="accent" routerLink="/login"><span
+            class="material-icons login-btn-icon">person</span> login</button>
+      </ul>
+    </div>
+
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.gt-sm="true" style="height: 35px; margin-top: 12px;">
+      <button mat-flat-button>Login </button>
+    </div>
+  </div>
+</mat-toolbar>
+
+
+
+
+
+

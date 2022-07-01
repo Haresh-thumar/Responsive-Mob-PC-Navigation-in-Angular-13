@@ -1,0 +1,24 @@
+<div class="container">
+
+  <h1 class="main-title">To-Do List App</h1>
+
+  <div class="row mt-5 mb-5">
+    <div class="col-md-10">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>First name</mat-label>
+        <input matInput type="text" placeholder="Enter Your Task..." class="add-input-box" [(ngModel)]="todo">
+      </mat-form-field>
+    </div>
+    <div class="col-md-2">
+      <button mat-raised-button color="warn" class="add-btn" (click)="save(todo)">Add Task</button>
+    </div>
+  </div>
+
+
+<!--===================== Start Data Table ====================-->
+<h2>{{ListItem}}</h2>
+
+
+
+
+</div>

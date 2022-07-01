@@ -1,0 +1,19 @@
+<mat-nav-list>
+  <div class="d-flex align-items-center">
+    <img src="assets\image\app-mgmt-logo-icon.png" alt="logo icon" class="flex-shrink-0 sidenav-logo">
+    <div>
+      <h6 class="sidenav-profile-name">App Mgmt...!</h6>
+      <span class="badge rounded-pill bg-danger version-bagde">Version : 2.6.3</span>
+    </div>
+  </div>
+  <mat-divider style="background-color: #3f51b5;"></mat-divider>
+  <a mat-list-item routerLink="/" (click)="onSidenavClose()">
+    <span class="material-icons desktop-nav-icon">home</span> Home
+  </a>
+  <a mat-list-item routerLink="/ourApp" (click)="onSidenavClose()">
+    <span class="material-icons desktop-nav-icon">app_settings_alt</span> Our App
+  </a>
+  <a mat-list-item routerLink="/services" (click)="onSidenavClose()">
+    <span class="material-icons desktop-nav-icon">support_agent</span>Our Services
+  </a>
+</mat-nav-list>

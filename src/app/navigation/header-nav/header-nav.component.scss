@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 21px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 13px;
+  font-weight: 300;
+}
+
+.mob-bar-icon {
+  margin-top: 10px;
+}
+
+.header-logo-icon {
+  font-size: 22px;
+  right: 5px;
+  top: 4px;
+  position: relative;
+}
+
+.desktop-nav-icon {
+  font-size: 19px;
+  top: 2px;
+  right: 4px;
+  position: relative;
+}
+
+.login-btn-icon {
+  font-size: 19px;
+  right: 1px;
+  top: -1px;
+  position: relative;
+}
+
+.mt-login-btn {
+  font-size: 17px;
+  height: 37px;
+  margin: 10px 0 0 -5px;
+  padding: 0px 10px 0 10px;
+}
+
+.navigation-items {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 5px;
+  padding: 0;
+  top: 0;
+  position: absolute;
+}
+
+.navigation-items li {
+  margin: 12px 0px 10px -10px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.navigation-items li:hover a {
+  background: rgba(26, 4, 128, 0.705);
+  border-radius: 5px;
+  color: rgb(255, 255, 255) !important;
+}
+
+a {
+  padding: 9px 15px 9px 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+}
+
+mat-toolbar {
+  border-radius: 3px;
+}
+
+@media (max-width: 959px) {
+  mat-toolbar {
+    border-radius: 0px;
+  }
+  .header-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .header-logo-icon {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .header-title {
+    font-size: 19px;
+    margin-top: 13px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header-logo-icon {
+    font-size: 19px;
+    margin-left: 5px;
+  }
+  .header-title {
+    font-size: 18px;
+    margin-top: 13px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-container {
+    width: 110%;
+    margin: 0 auto;
+  }
+  .header-title {
+    font-size: 17px;
+    margin-top: 13px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 420px) {
+  .mob-bar-icon {
+    margin-top: 11px;
+    margin-left: -10px;
+  }
+  .header-logo-icon {
+    font-size: 18px;
+  }
+  .header-title {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}

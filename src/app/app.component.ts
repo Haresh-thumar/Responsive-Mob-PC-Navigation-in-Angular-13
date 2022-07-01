@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learnAngular';
+
+  ListItem = 200;
+
+  updateChild(){
+    this.ListItem = Math.random();
+  }
+
 }
