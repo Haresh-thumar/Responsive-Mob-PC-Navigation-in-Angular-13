@@ -1,4 +1,4 @@
-# Angular-13-Responsive-Mobile-Desktop-Navigation
+# Responsive-Mobile-Desktop-Navigation-Angular-13
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
