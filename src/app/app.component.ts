@@ -8,10 +8,4 @@ import { Component, Output, OnInit } from '@angular/core';
 export class AppComponent {
   title = 'learnAngular';
 
-  ListItem = 200;
-
-  updateChild(){
-    this.ListItem = Math.random();
-  }
-
 }

@@ -1,6 +1,6 @@
 <div class="container">
 
-  <h1 class="main-title">To-Do List App</h1>
+  <h1 class="main-title">Home Component</h1>
 
   <div class="row mt-5 mb-5">
     <div class="col-md-10">
@@ -14,11 +14,8 @@
     </div>
   </div>
 
-
-<!--===================== Start Data Table ====================-->
-<h2>{{ListItem}}</h2>
-
-
-
+  <ul *ngFor="let item of data">
+    <li>{{item}} - <button class="btn btn-danger" (click)="delItem(item)">Delete</button></li>
+  </ul>
 
 </div>
